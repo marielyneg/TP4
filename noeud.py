@@ -1,17 +1,25 @@
+
+
+#programme de Marie Lyne
 import matplotlib.pyplot as plt
 class Noeud:
+    """Represente un noeud du graphe"""
     def __init__(self,valeur):
+        #j'ajoute pas des docstring(commentaires) dans le init
         self.valeur=valeur
         self.enfants=[]
     def ajouter_un_enfant(self,noeud):
+        """Ajoute un noeud à la liste des enfants du noeud"""
         self.enfants.append(noeud)
     def afficher(self):
+        """Affiche la valeur du noeud puis récursiveent ses enfants"""
+
         print(self.valeur, end=" ")
 
         for enfant in self.enfants:
             enfant.afficher()
     def evaluer(self, dico):
-
+       """Evalue l'expression representee par le noeud"""
      if isinstance(self.valeur, (int, float)):
         return self.valeur
 
