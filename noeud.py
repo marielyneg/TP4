@@ -3,7 +3,14 @@
 #programme de Marie Lyne
 import matplotlib.pyplot as plt
 class Noeud:
-    """Represente un noeud du graphe"""
+    """
+    C'est PGM de marielyng.
+    Cette classe "Noeud" incule fonctions ceux-dessous:
+    "ajouter_un_enfant"
+    "afficher"
+    "evaluer"
+    "tracer
+    """
     def __init__(self,valeur):
         #j'ajoute pas des docstring(commentaires) dans le init
         self.valeur=valeur
