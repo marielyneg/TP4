@@ -1,5 +1,13 @@
 import matplotlib.pyplot as plt
 class Noeud:
+    """
+    C'est PGM de marielyng.
+    Cette classe "Noeud" incule fonctions ceux-dessous:
+    "ajouter_un_enfant"
+    "afficher"
+    "evaluer"
+    "tracer
+    """
     def __init__(self,valeur):
         self.valeur=valeur
         self.enfants=[]
